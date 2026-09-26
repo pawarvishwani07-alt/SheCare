@@ -15,12 +15,24 @@ const ai = new GoogleGenAI({
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://she-care-one.vercel.app"
+];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://she-care-one.vercel.app"
-    ],
+    origin: (origin, callback) => {
+      if (
+        !origin ||
+        allowedOrigins.includes(origin) ||
+        /^https:\/\/she-care-[a-z0-9-]+-vishwani\.vercel\.app$/.test(origin)
+      ) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true
   })
 );
