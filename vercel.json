@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://shecare-backend-pan9.onrender.com/api/:path*"
+    }
+  ]
+}
