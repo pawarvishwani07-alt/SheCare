@@ -1,0 +1,281 @@
+.selfcare-page {
+  background: #fff8fb;
+  min-height: 100vh;
+}
+
+/* HERO */
+
+.selfcare-hero {
+  background: linear-gradient(135deg, #fff0f6, #ffe0ec);
+  padding: 70px 9%;
+}
+
+.selfcare-hero-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.selfcare-label {
+  color: #d63384;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.selfcare-hero h1 {
+  font-size: 48px;
+  color: #30242b;
+  margin: 18px 0;
+}
+
+.selfcare-hero h1 span {
+  color: #d63384;
+}
+
+.selfcare-hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #665b62;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.selfcare-icon {
+  font-size: 65px;
+  margin-top: 25px;
+}
+
+/* INTRO */
+
+.selfcare-intro {
+  padding: 65px 9%;
+  background: #ffffff;
+}
+
+.selfcare-heading {
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+}
+
+.selfcare-heading span {
+  color: #d63384;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.selfcare-heading h2 {
+  color: #30242b;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.selfcare-heading p {
+  color: #6d6268;
+  line-height: 1.8;
+}
+
+/* SELF-CARE SECTION */
+
+.selfcare-section {
+  padding: 70px 9%;
+  background: #fff8fb;
+}
+
+/* CARDS */
+
+.selfcare-grid {
+  max-width: 1100px;
+  margin: 45px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.selfcare-card {
+  background: #ffffff;
+  border: 1px solid #f3d5e2;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.selfcare-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(214, 51, 132, 0.12);
+}
+
+.selfcare-card-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.selfcare-card h3 {
+  color: #30242b;
+  margin-bottom: 10px;
+}
+
+.selfcare-card p {
+  color: #6d6268;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* CHECKLIST */
+
+.selfcare-checklist {
+  padding: 55px 9%;
+  background: #ffffff;
+}
+
+.checklist-content {
+  max-width: 800px;
+  margin: auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.checklist-icon {
+  font-size: 55px;
+}
+
+.checklist-content h2 {
+  color: #30242b;
+  margin-top: 0;
+}
+
+.checklist-content ul {
+  padding-left: 20px;
+  color: #6d6268;
+  line-height: 2;
+}
+
+/* SUPPORT */
+
+.selfcare-support {
+  padding: 50px 9%;
+  background: #fff0f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+}
+
+.selfcare-support-icon {
+  font-size: 55px;
+}
+
+.selfcare-support h2 {
+  color: #30242b;
+  margin-bottom: 8px;
+}
+
+.selfcare-support p {
+  max-width: 700px;
+  color: #665b62;
+  line-height: 1.7;
+}
+
+/* BANNER */
+
+.selfcare-banner {
+  padding: 45px 9%;
+  background: #d63384;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+}
+
+.selfcare-banner-icon {
+  font-size: 55px;
+}
+
+.selfcare-banner h2 {
+  margin: 0 0 8px;
+}
+
+.selfcare-banner p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* DISCLAIMER */
+
+.selfcare-disclaimer {
+  padding: 30px 9%;
+  text-align: center;
+  background: #fff8fb;
+
+  color: #6d6268;
+  font-size: 13px;
+}
+
+.selfcare-disclaimer p {
+  margin: 8px 0 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .selfcare-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .selfcare-hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .selfcare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selfcare-hero {
+    padding: 50px 6%;
+  }
+
+  .selfcare-hero h1 {
+    font-size: 32px;
+  }
+
+  .selfcare-section {
+    padding: 50px 6%;
+  }
+
+  .checklist-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .checklist-content ul {
+    text-align: left;
+  }
+
+  .selfcare-support {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .selfcare-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

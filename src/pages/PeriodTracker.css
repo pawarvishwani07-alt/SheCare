@@ -1,0 +1,860 @@
+/* =========================================
+   PERIOD TRACKER PAGE
+========================================= */
+
+.period-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #fff5fa 0%,
+    #fdf8ff 50%,
+    #f4f8ff 100%
+  );
+
+  padding: 50px 20px 70px;
+}
+
+
+.period-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.period-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+
+.period-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #f8d9e8,
+    #eadcff
+  );
+
+  font-size: 35px;
+
+  box-shadow:
+    0 10px 25px rgba(214, 51, 132, 0.12);
+}
+
+
+.period-header h1 {
+  margin: 0;
+
+  color: #5a315f;
+
+  font-size: 38px;
+
+  font-weight: 700;
+}
+
+
+.period-header p {
+  max-width: 650px;
+
+  margin: 12px auto 0;
+
+  color: #777;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.period-form {
+  background: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(80, 40, 80, 0.08);
+
+  border: 1px solid #f0e3ef;
+
+  margin-bottom: 25px;
+}
+
+
+.period-input-group {
+  margin-bottom: 22px;
+}
+
+
+.period-input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #4d3a4f;
+
+  font-weight: 600;
+
+  font-size: 14px;
+}
+
+
+.period-input-group input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 14px 15px;
+
+  border: 1px solid #ded6df;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  background: #fff;
+
+  color: #333;
+
+  font-size: 15px;
+
+  transition: 0.25s;
+}
+
+
+.period-input-group input:focus {
+  border-color: #d63384;
+
+  box-shadow:
+    0 0 0 3px rgba(214, 51, 132, 0.08);
+}
+
+
+.period-input-unit {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.period-input-unit input {
+  flex: 1;
+}
+
+
+.period-input-unit span {
+  min-width: 55px;
+
+  text-align: center;
+
+  padding: 12px 10px;
+
+  border-radius: 10px;
+
+  background: #f9edf5;
+
+  color: #8b4c78;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.period-input-group small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.period-button,
+.period-reset-button {
+  width: 100%;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 14px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+
+.period-button {
+  background: linear-gradient(
+    135deg,
+    #d63384,
+    #a855a8
+  );
+
+  color: white;
+
+  margin-top: 5px;
+}
+
+
+.period-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(214, 51, 132, 0.2);
+}
+
+
+.period-reset-button {
+  margin-top: 12px;
+
+  background: #f5f0f5;
+
+  color: #704d6b;
+}
+
+
+.period-reset-button:hover {
+  background: #eee3ed;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.period-error {
+  background: #fff0f0;
+
+  border: 1px solid #f2c4c4;
+
+  color: #a33a3a;
+
+  padding: 15px 18px;
+
+  border-radius: 12px;
+
+  margin-bottom: 25px;
+
+  text-align: center;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   RESULT
+========================================= */
+
+.period-result {
+  margin-bottom: 35px;
+}
+
+
+.period-result-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+
+.period-result-title span {
+  font-size: 25px;
+}
+
+
+.period-result-title h2 {
+  margin: 0;
+
+  color: #5a315f;
+
+  font-size: 25px;
+}
+
+
+.period-result-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+.period-result-card {
+  background: #ffffff;
+
+  border: 1px solid #eee1ec;
+
+  border-radius: 17px;
+
+  padding: 20px;
+
+  min-height: 115px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  box-shadow:
+    0 8px 25px rgba(80, 40, 80, 0.06);
+}
+
+
+.period-result-card span {
+  color: #777;
+
+  font-size: 13px;
+
+  margin-bottom: 9px;
+}
+
+
+.period-result-card strong {
+  color: #633b63;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   WELLNESS SUGGESTIONS
+========================================= */
+
+.period-suggestions {
+  margin-top: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #eaddea;
+
+  border-radius: 22px;
+
+  padding: 25px;
+
+  box-shadow:
+    0 10px 30px rgba(80, 40, 80, 0.06);
+}
+
+
+.suggestion-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+
+.suggestion-main-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #f3f9ee;
+
+  font-size: 25px;
+}
+
+
+.suggestion-heading h3 {
+  margin: 0;
+
+  color: #5a315f;
+
+  font-size: 21px;
+}
+
+
+.suggestion-heading p {
+  margin: 5px 0 0;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+
+.suggestion-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+
+.suggestion-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 16px;
+
+  background: #fcf9fc;
+
+  border: 1px solid #eee5ee;
+
+  border-radius: 15px;
+
+  transition: 0.25s;
+}
+
+
+.suggestion-item:hover {
+  transform: translateY(-2px);
+
+  border-color: #e4c6dc;
+
+  box-shadow:
+    0 8px 20px rgba(80, 40, 80, 0.07);
+}
+
+
+.suggestion-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+
+.suggestion-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #f7eaf4;
+
+  font-size: 21px;
+}
+
+
+.suggestion-info strong {
+  display: block;
+
+  color: #574257;
+
+  font-size: 15px;
+}
+
+
+.suggestion-info p {
+  margin: 4px 0 0;
+
+  color: #888;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+.watch-video-btn {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  padding: 9px 13px;
+
+  border-radius: 9px;
+
+  background: #d63384;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: 0.25s;
+}
+
+
+.watch-video-btn:hover {
+  background: #b82b70;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   EXERCISE VIDEO GUIDE
+========================================= */
+
+.exercise-video-section {
+  margin-top: 22px;
+
+  padding: 22px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #fff7fb,
+    #f7f3ff
+  );
+
+  border: 1px solid #eadff0;
+}
+
+
+.exercise-video-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.exercise-video-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #eadcff;
+
+  font-size: 24px;
+}
+
+
+.exercise-video-header h3 {
+  margin: 0;
+
+  color: #5a315f;
+
+  font-size: 19px;
+}
+
+
+.exercise-video-header p {
+  margin: 5px 0 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.exercise-video-note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-top: 18px;
+
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid #eee5ef;
+}
+
+
+.exercise-video-note span {
+  font-size: 18px;
+}
+
+
+.exercise-video-note p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   CYCLE INFORMATION
+========================================= */
+
+.period-info {
+  margin-top: 40px;
+}
+
+
+.period-info > h2 {
+  text-align: center;
+
+  color: #5a315f;
+
+  font-size: 27px;
+
+  margin-bottom: 22px;
+}
+
+
+.phase-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+.phase-card {
+  background: #ffffff;
+
+  border: 1px solid #eee2ed;
+
+  border-radius: 18px;
+
+  padding: 22px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 22px rgba(80, 40, 80, 0.05);
+
+  transition: 0.25s;
+}
+
+
+.phase-card:hover {
+  transform: translateY(-3px);
+}
+
+
+.phase-card > span {
+  display: block;
+
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+
+.phase-card h3 {
+  margin: 0 0 8px;
+
+  color: #644064;
+
+  font-size: 16px;
+}
+
+
+.phase-card p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   DISCLAIMER
+========================================= */
+
+.period-disclaimer {
+  margin-top: 30px;
+
+  padding: 22px;
+
+  border-radius: 17px;
+
+  background: #fff9fc;
+
+  border: 1px solid #f0dce8;
+}
+
+
+.period-disclaimer strong {
+  color: #70415f;
+
+  font-size: 15px;
+}
+
+
+.period-disclaimer p {
+  margin: 8px 0 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .period-result-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .phase-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .period-page {
+    padding: 35px 15px 50px;
+  }
+
+
+  .period-header h1 {
+    font-size: 30px;
+  }
+
+
+  .period-form {
+    padding: 22px;
+  }
+
+
+  .suggestion-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .suggestion-item {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .watch-video-btn {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .period-result-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .phase-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .period-result-card {
+    min-height: auto;
+  }
+
+
+  .suggestion-heading {
+    align-items: flex-start;
+  }
+
+
+  .exercise-video-header {
+    align-items: flex-start;
+  }
+
+}

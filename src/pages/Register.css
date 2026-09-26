@@ -1,0 +1,320 @@
+.register-page {
+  min-height: calc(100vh - 75px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #fff4f8,
+    #f9eaf2
+  );
+}
+
+
+/* ================================
+   REGISTER CARD
+================================ */
+
+.register-card {
+  width: 100%;
+  max-width: 450px;
+
+  background: #ffffff;
+
+  padding: 42px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.register-logo img {
+  width: 115px;
+  height: auto;
+
+  margin-bottom: 12px;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.register-heading h1 {
+  margin: 5px 0 8px;
+
+  color: #333;
+
+  font-size: 30px;
+}
+
+.register-heading p {
+  margin: 0 0 30px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   FORM FIELD
+================================ */
+
+.register-field {
+  text-align: left;
+
+  margin-bottom: 19px;
+}
+
+.register-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #444;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* ================================
+   PASSWORD LABEL
+================================ */
+
+.password-label-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.password-label-row label {
+  margin-bottom: 0;
+}
+
+.password-hint {
+  color: #999;
+
+  font-size: 11px;
+}
+
+
+/* ================================
+   INPUT
+================================ */
+
+.register-field input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 14px 15px;
+
+  border: 1px solid #dedede;
+
+  border-radius: 11px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #333;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.register-field input::placeholder {
+  color: #aaa;
+}
+
+.register-field input:focus {
+  border-color: #d63384;
+
+  box-shadow:
+    0 0 0 3px rgba(214, 51, 132, 0.10);
+}
+
+
+/* ================================
+   PASSWORD INPUT
+================================ */
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper input {
+  padding-right: 65px;
+}
+
+.show-password-btn {
+  position: absolute;
+
+  right: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+
+  background: transparent;
+
+  color: #d63384;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.show-password-btn:hover {
+  color: #b8256d;
+}
+
+
+/* ================================
+   REGISTER BUTTON
+================================ */
+
+.register-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background: #d63384;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #b8256d;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 15px rgba(214, 51, 132, 0.20);
+}
+
+
+/* ================================
+   LOGIN LINK
+================================ */
+
+.login-text {
+  margin: 24px 0 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #d63384;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================
+   HOME LINK
+================================ */
+
+.register-home {
+  display: inline-block;
+
+  margin-top: 18px;
+
+  color: #666;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.register-home:hover {
+  color: #d63384;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 500px) {
+
+  .register-page {
+    padding: 30px 15px;
+  }
+
+  .register-card {
+    padding: 32px 22px;
+
+    border-radius: 20px;
+  }
+
+  .register-logo img {
+    width: 100px;
+  }
+
+  .register-heading h1 {
+    font-size: 26px;
+  }
+
+  .register-heading p {
+    font-size: 13px;
+  }
+
+  .password-label-row {
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+  .password-hint {
+    font-size: 10px;
+  }
+
+}

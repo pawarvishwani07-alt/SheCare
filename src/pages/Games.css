@@ -1,0 +1,957 @@
+/* =========================================
+   GAMES PAGE
+========================================= */
+
+.games-page {
+  min-height: 100vh;
+  background: #fff9fc;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.games-hero {
+  padding: 80px 9% 75px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(214, 51, 132, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(142, 68, 173, 0.16),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #fff4fa,
+      #f7efff
+    );
+
+  text-align: center;
+}
+
+.games-hero-content {
+  max-width: 760px;
+  margin: auto;
+}
+
+.games-badge {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  background: #ffffff;
+
+  color: #8e44ad;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 5px 18px rgba(142, 68, 173, 0.10);
+}
+
+.games-hero h1 {
+  margin: 20px 0 15px;
+
+  font-size: 48px;
+
+  line-height: 1.15;
+
+  color: #2d1738;
+}
+
+.games-hero h1 span {
+  color: #d63384;
+}
+
+.games-hero p {
+  max-width: 650px;
+
+  margin: auto;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #666;
+}
+
+
+/* =========================================
+   GAMES SECTION
+========================================= */
+
+.games-section {
+  padding: 75px 9%;
+}
+
+.games-section-heading {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.games-section-heading span {
+  color: #d63384;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.games-section-heading h2 {
+  margin: 10px 0 8px;
+
+  font-size: 34px;
+
+  color: #2d1738;
+}
+
+.games-section-heading p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   GAME CARDS
+========================================= */
+
+.games-grid {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+.game-card {
+  position: relative;
+
+  padding: 30px 24px;
+
+  min-height: 320px;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  border: 1px solid #f0e6f0;
+
+  box-shadow:
+    0 8px 25px rgba(75, 30, 90, 0.07);
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition: 0.3s ease;
+
+  overflow: hidden;
+}
+
+.game-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  top: -50px;
+  right: -40px;
+
+  opacity: 0.15;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(75, 30, 90, 0.13);
+}
+
+
+/* Card Colors */
+
+.game-card.pink::before {
+  background: #d63384;
+}
+
+.game-card.purple::before {
+  background: #8e44ad;
+}
+
+.game-card.blue::before {
+  background: #4b7bec;
+}
+
+.game-card.rose::before {
+  background: #e84393;
+}
+
+
+/* =========================================
+   GAME ICON
+========================================= */
+
+.game-icon {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  font-size: 32px;
+
+  margin-bottom: 22px;
+
+  background: #fff0f7;
+}
+
+.game-card.purple .game-icon {
+  background: #f4edff;
+}
+
+.game-card.blue .game-icon {
+  background: #edf3ff;
+}
+
+.game-card.rose .game-icon {
+  background: #fff0f6;
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.game-card h3 {
+  margin: 0 0 12px;
+
+  color: #2d1738;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+}
+
+.game-card p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+
+  flex: 1;
+}
+
+
+/* =========================================
+   PLAY BUTTON
+========================================= */
+
+.play-game-btn {
+  margin-top: 22px;
+
+  width: 100%;
+
+  padding: 12px 16px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d63384,
+      #8e44ad
+    );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.play-game-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(214, 51, 132, 0.25);
+}
+
+
+/* =========================================
+   INFORMATION BANNER
+========================================= */
+
+.games-info {
+  max-width: 1000px;
+
+  margin: 10px auto 80px;
+
+  padding: 28px 32px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff0f7,
+      #f5edff
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+}
+
+.games-info-icon {
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  border-radius: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: white;
+
+  font-size: 30px;
+}
+
+.games-info h2 {
+  margin: 0 0 6px;
+
+  font-size: 22px;
+
+  color: #2d1738;
+}
+
+.games-info p {
+  margin: 0;
+
+  color: #666;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.game-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(35, 15, 45, 0.55);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 10000;
+
+  animation: modalFade 0.2s ease;
+}
+
+@keyframes modalFade {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.game-modal {
+  position: relative;
+
+  width: 420px;
+
+  max-width: 100%;
+
+  padding: 42px 30px 32px;
+
+  background: white;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25);
+
+  animation: modalScale 0.25s ease;
+}
+
+@keyframes modalScale {
+
+  from {
+    transform: scale(0.92);
+  }
+
+  to {
+    transform: scale(1);
+  }
+
+}
+
+.game-modal-close {
+  position: absolute;
+
+  top: 12px;
+  right: 16px;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 28px;
+
+  color: #777;
+
+  cursor: pointer;
+}
+
+.modal-game-icon {
+  font-size: 55px;
+
+  margin-bottom: 10px;
+}
+
+.game-modal h2 {
+  margin: 0 0 10px;
+
+  color: #2d1738;
+
+  font-size: 25px;
+}
+
+.game-modal p {
+  margin: 0 auto 25px;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.modal-start-btn {
+  padding: 12px 30px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d63384,
+      #8e44ad
+    );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .games-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .games-hero {
+    padding: 60px 6%;
+  }
+
+  .games-hero h1 {
+    font-size: 36px;
+  }
+
+  .games-hero p {
+    font-size: 15px;
+  }
+
+  .games-section {
+    padding: 55px 6%;
+  }
+
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .games-info {
+    margin: 0 6% 60px;
+
+    padding: 24px;
+
+    align-items: flex-start;
+  }
+
+}
+
+/* =========================================
+   HEALTHY HABIT GAME
+========================================= */
+
+.healthy-game-modal {
+  max-width: 520px;
+}
+
+.game-progress {
+  color: #8e44ad;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 7px;
+  background: #eee4f2;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #d63384, #8e44ad);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.game-question {
+  font-size: 18px !important;
+  font-weight: 600;
+  color: #35223d !important;
+  line-height: 1.5 !important;
+  margin: 20px auto !important;
+}
+
+.answer-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.answer-btn {
+  padding: 14px;
+  border-radius: 14px;
+  border: 2px solid #eee;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.answer-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.answer-btn.healthy {
+  color: #27834a;
+}
+
+.answer-btn.unhealthy {
+  color: #d14b62;
+}
+
+.answer-btn.healthy.selected {
+  background: #eaf8ef;
+  border-color: #55b878;
+}
+
+.answer-btn.unhealthy.selected {
+  background: #fff0f2;
+  border-color: #e06a7b;
+}
+
+.answer-btn:disabled {
+  cursor: default;
+}
+
+.answer-feedback {
+  padding: 13px 15px;
+  border-radius: 13px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.answer-feedback p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.answer-feedback.correct {
+  background: #eaf8ef;
+  color: #287744;
+}
+
+.answer-feedback.wrong {
+  background: #fff0f2;
+  color: #c04458;
+}
+
+.next-question-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #d63384, #8e44ad);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.next-question-btn:hover {
+  transform: translateY(-2px);
+}
+
+.result-icon {
+  font-size: 65px;
+  margin-bottom: 8px;
+}
+
+.final-score {
+  margin: 22px auto;
+  padding: 20px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fff0f7, #f5edff);
+}
+
+.final-score span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.final-score strong {
+  display: block;
+  color: #8e44ad;
+  font-size: 38px;
+}
+
+.result-message {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.result-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.close-game-btn {
+  padding: 12px 25px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.close-game-btn:hover {
+  background: #f8f8f8;
+}
+
+
+/* =========================================
+   MOBILE GAME
+========================================= */
+
+@media (max-width: 550px) {
+
+  .healthy-game-modal {
+    padding: 35px 20px 25px;
+  }
+
+  .answer-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .game-question {
+    font-size: 16px !important;
+  }
+
+}
+
+/* =========================================
+   MYTH OR FACT
+========================================= */
+
+.myth-answer {
+  color: #c04458;
+}
+
+.fact-answer {
+  color: #287744;
+}
+
+.myth-answer.selected {
+  background: #fff0f2;
+  border-color: #e06a7b;
+}
+
+.fact-answer.selected {
+  background: #eaf8ef;
+  border-color: #55b878;
+}
+
+
+/* =========================================
+   MEMORY MATCH
+========================================= */
+
+.memory-game-modal {
+  max-width: 600px;
+}
+
+.memory-intro {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.memory-stats {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f0fa;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  color: #666;
+  font-size: 13px;
+}
+
+.memory-stats strong {
+  color: #8e44ad;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.memory-card {
+  min-height: 145px;
+  border: 2px solid #eee;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff, #faf5fc);
+  cursor: pointer;
+  padding: 15px;
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.memory-card:hover:not(:disabled) {
+  transform: translateY(-3px);
+  border-color: #c88bdc;
+  box-shadow: 0 8px 20px rgba(142, 68, 173, 0.12);
+}
+
+.memory-card.memory-selected {
+  background: #f8edfc;
+  border-color: #8e44ad;
+}
+
+.memory-card.memory-matched {
+  background: #eaf8ef;
+  border-color: #55b878;
+  cursor: default;
+}
+
+.memory-question {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d63384, #8e44ad);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.memory-icon {
+  font-size: 32px;
+}
+
+.memory-card strong {
+  color: #8e44ad;
+  font-size: 14px;
+}
+
+.memory-card small {
+  color: #666;
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+/* =========================================
+   SELF CARE CHALLENGE
+========================================= */
+
+.selfcare-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.selfcare-option {
+  width: 100%;
+  padding: 13px 15px;
+  background: white;
+  border: 2px solid #eee;
+  border-radius: 13px;
+  color: #555;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.selfcare-option:hover:not(:disabled) {
+  border-color: #d63384;
+  background: #fff5fa;
+  transform: translateX(3px);
+}
+
+.selfcare-option.selected {
+  border-color: #d63384;
+  background: #fff0f7;
+  color: #8e44ad;
+  font-weight: 600;
+}
+
+.selfcare-option:disabled {
+  cursor: default;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+  .memory-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .memory-card {
+    min-height: 125px;
+    padding: 10px;
+  }
+
+  .memory-icon {
+    font-size: 27px;
+  }
+
+  .memory-card strong {
+    font-size: 12px;
+  }
+
+  .memory-card small {
+    font-size: 10px;
+  }
+
+  .memory-question {
+    width: 40px;
+    height: 40px;
+  }
+
+}

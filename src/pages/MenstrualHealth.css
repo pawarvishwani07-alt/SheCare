@@ -1,0 +1,391 @@
+/* ================================
+   MENSTRUAL HEALTH PAGE
+================================ */
+
+.menstrual-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff8fb;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.menstrual-hero {
+  min-height: 430px;
+  padding: 70px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #fff0f7,
+    #ffe4f0
+  );
+}
+
+.menstrual-hero-content {
+  max-width: 650px;
+}
+
+.page-label {
+  color: #c72f72;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.menstrual-hero h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin: 0 0 20px;
+  color: #29213a;
+}
+
+.menstrual-hero h1 span {
+  color: #d63384;
+}
+
+.menstrual-hero p:not(.page-label) {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.menstrual-icon {
+  width: 220px;
+  height: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+  font-size: 95px;
+
+  box-shadow: 0 15px 40px rgba(180, 50, 110, 0.15);
+}
+
+
+/* ================================
+   COMMON SECTION
+================================ */
+
+.menstrual-section {
+  padding: 75px 9%;
+  background: #ffffff;
+}
+
+.light-section {
+  background: #fff5fa;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading p {
+  color: #d63384;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  margin: 0 0 12px;
+  color: #29213a;
+  font-size: 36px;
+}
+
+.section-heading span {
+  color: #777;
+  font-size: 16px;
+}
+
+
+/* ================================
+   INFORMATION BOX
+================================ */
+
+.info-box {
+  max-width: 900px;
+  margin: auto;
+
+  padding: 35px;
+
+  background: #fff8fb;
+  border-left: 5px solid #d63384;
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.info-box p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 0 18px;
+}
+
+.info-box p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ================================
+   HYGIENE CARDS
+================================ */
+
+.hygiene-grid {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.hygiene-card {
+  background: #ffffff;
+  padding: 28px 22px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+  transition: 0.3s ease;
+}
+
+.hygiene-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(190, 50, 110, 0.15);
+}
+
+.hygiene-card > div {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffe4f0;
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+.hygiene-card h3 {
+  color: #333;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.hygiene-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   SYMPTOMS
+================================ */
+
+.symptoms-list {
+  max-width: 900px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.symptoms-list div {
+  padding: 18px 22px;
+
+  background: #fff5fa;
+
+  border-radius: 10px;
+
+  color: #555;
+  font-size: 16px;
+
+  border: 1px solid #f5d5e5;
+}
+
+.symptoms-list div::first-letter {
+  color: #d63384;
+}
+
+
+/* ================================
+   SEEK HELP SECTION
+================================ */
+
+.help-section {
+  padding: 65px 9%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background: linear-gradient(
+    135deg,
+    #ffe7f1,
+    #fff4f8
+  );
+}
+
+.help-section > div:first-child {
+  max-width: 750px;
+}
+
+.help-section h2 {
+  color: #29213a;
+  font-size: 36px;
+  line-height: 1.3;
+  margin: 10px 0 20px;
+}
+
+.help-section p:not(.page-label) {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.help-icon {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+  font-size: 65px;
+
+  box-shadow: 0 10px 30px rgba(180, 50, 110, 0.12);
+}
+
+
+/* ================================
+   DISCLAIMER
+================================ */
+
+.menstrual-disclaimer {
+  padding: 35px 9%;
+  text-align: center;
+  background: #29213a;
+  color: #ffffff;
+}
+
+.menstrual-disclaimer h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.menstrual-disclaimer p {
+  max-width: 900px;
+  margin: auto;
+
+  color: #ddd;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+
+  .menstrual-hero {
+    padding: 55px 6%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menstrual-hero h1 {
+    font-size: 40px;
+  }
+
+  .menstrual-hero p:not(.page-label) {
+    margin: auto;
+  }
+
+  .hygiene-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .help-section {
+    padding: 55px 6%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .menstrual-hero {
+    padding: 45px 5%;
+  }
+
+  .menstrual-hero h1 {
+    font-size: 32px;
+  }
+
+  .menstrual-icon {
+    width: 160px;
+    height: 160px;
+    font-size: 65px;
+  }
+
+  .menstrual-section {
+    padding: 55px 5%;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .hygiene-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .symptoms-list {
+    grid-template-columns: 1fr;
+  }
+
+  .help-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .help-section h2 {
+    font-size: 28px;
+  }
+
+}

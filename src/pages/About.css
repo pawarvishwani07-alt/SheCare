@@ -1,0 +1,171 @@
+.about-page {
+  min-height: 100vh;
+  background: #fff8fb;
+  color: #30242b;
+}
+
+/* Hero */
+
+.about-hero {
+  padding: 90px 8%;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #fff8fb,
+    #fceaf2
+  );
+}
+
+.about-label {
+  color: #c94f78;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.about-hero h1 span {
+  color: #c94f78;
+}
+
+.about-hero > p:last-child {
+  max-width: 700px;
+  margin: auto;
+  color: #6d5961;
+  font-size: 17px;
+}
+
+
+/* Mission */
+
+.about-section {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background: white;
+}
+
+.about-card {
+  padding: 40px;
+  border-radius: 20px;
+  background: #fff8fb;
+  border: 1px solid #f3dce5;
+}
+
+.about-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about-card h2 {
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  color: #6d5961;
+  line-height: 1.7;
+}
+
+
+/* What We Cover */
+
+.what-we-cover {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.what-we-cover > h2 {
+  font-size: 38px;
+  margin-bottom: 45px;
+}
+
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  text-align: left;
+}
+
+.cover-card {
+  padding: 30px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #f3dce5;
+  transition: 0.3s;
+}
+
+.cover-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(130, 70, 100, 0.12);
+}
+
+.cover-card span {
+  font-size: 35px;
+}
+
+.cover-card h3 {
+  margin: 15px 0 8px;
+}
+
+.cover-card p {
+  color: #6d5961;
+  font-size: 14px;
+}
+
+
+/* Disclaimer */
+
+.about-disclaimer {
+  padding: 40px 8%;
+  text-align: center;
+  background: #fceaf2;
+}
+
+.about-disclaimer h3 {
+  color: #c94f78;
+  margin-bottom: 10px;
+}
+
+.about-disclaimer p {
+  max-width: 800px;
+  margin: auto;
+  color: #6d5961;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .cover-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .what-we-cover > h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,484 @@
+/* =========================================
+   FLOATING AI BUTTON
+========================================= */
+
+.floating-ai-button {
+  position: fixed;
+
+  right: 25px;
+  bottom: 25px;
+
+  width: 72px;
+  height: 72px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  z-index: 9999;
+
+  box-shadow:
+    0 6px 20px rgba(142, 68, 173, 0.30);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* AI LOGO */
+
+.floating-ai-button img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* HOVER */
+
+.floating-ai-button:hover {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 10px 30px rgba(142, 68, 173, 0.42);
+}
+
+
+/* CLICK */
+
+.floating-ai-button:active {
+  transform: scale(0.95);
+}
+
+
+/* KEYBOARD FOCUS */
+
+.floating-ai-button:focus-visible {
+  outline: 3px solid #d63384;
+  outline-offset: 4px;
+}
+
+
+/* =========================================
+   AI CHAT WINDOW
+========================================= */
+
+.floating-ai-chat {
+  position: fixed;
+
+  right: 25px;
+  bottom: 110px;
+
+  width: 360px;
+  max-width: calc(100vw - 30px);
+
+  height: 500px;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 9998;
+
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.20);
+
+  animation: aiChatOpen 0.25s ease;
+}
+
+
+/* =========================================
+   OPEN ANIMATION
+========================================= */
+
+@keyframes aiChatOpen {
+
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+/* =========================================
+   AI HEADER
+========================================= */
+
+.floating-ai-header {
+  background:
+    linear-gradient(
+      135deg,
+      #d63384,
+      #8e44ad
+    );
+
+  color: #ffffff;
+
+  padding: 14px 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* HEADER LOGO + TEXT */
+
+.ai-header-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+}
+
+
+.ai-header-info img {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  background: #ffffff;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  flex-shrink: 0;
+}
+
+
+.ai-header-info h3 {
+  margin: 0;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+.ai-header-info span {
+  font-size: 12px;
+
+  opacity: 0.95;
+}
+
+
+/* ONLINE DOT */
+
+.online-dot {
+  display: inline-block;
+
+  width: 7px;
+  height: 7px;
+
+  background: #7cff8a;
+
+  border-radius: 50%;
+
+  margin-right: 5px;
+}
+
+
+/* CLOSE BUTTON */
+
+.floating-ai-close {
+  background: transparent;
+
+  border: none;
+
+  color: #ffffff;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  line-height: 1;
+
+  padding: 0 5px;
+
+  flex-shrink: 0;
+
+  transition: 0.2s ease;
+}
+
+
+.floating-ai-close:hover {
+  opacity: 0.8;
+
+  transform: scale(1.08);
+}
+
+
+/* =========================================
+   CHAT BODY
+========================================= */
+
+.floating-ai-body {
+  flex: 1;
+
+  min-height: 0;
+
+  padding: 18px;
+
+  background: #faf7fb;
+
+  overflow-y: auto;
+}
+
+
+/* AI MESSAGE */
+
+.ai-message {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  max-width: 90%;
+}
+
+
+.ai-message-logo {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+
+.ai-message > div {
+  background: #ffffff;
+
+  padding: 11px 13px;
+
+  border-radius:
+    5px
+    15px
+    15px
+    15px;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+
+.ai-message strong {
+  display: block;
+
+  color: #8e44ad;
+
+  font-size: 13px;
+
+  margin-bottom: 4px;
+}
+
+
+.ai-message p {
+  margin: 0;
+
+  color: #444444;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   INPUT AREA
+========================================= */
+
+.floating-ai-input {
+  display: flex;
+
+  gap: 8px;
+
+  padding: 12px;
+
+  background: #ffffff;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+.floating-ai-input input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 22px;
+
+  padding: 11px 15px;
+
+  outline: none;
+
+  font-size: 13px;
+}
+
+
+.floating-ai-input input:focus {
+  border-color: #d63384;
+
+  box-shadow:
+    0 0 0 3px rgba(214, 51, 132, 0.10);
+}
+
+
+.floating-ai-input button {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #d63384;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  transition: 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+
+.floating-ai-input button:hover {
+  background: #b8256d;
+
+  transform: scale(1.05);
+}
+
+
+.floating-ai-input button:active {
+  transform: scale(0.95);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .floating-ai-button {
+    width: 62px;
+    height: 62px;
+
+    right: 18px;
+    bottom: 18px;
+  }
+
+
+  .floating-ai-chat {
+    right: 15px;
+    bottom: 90px;
+
+    width: calc(100vw - 30px);
+
+    height: 70vh;
+
+    min-height: 420px;
+
+    border-radius: 20px;
+  }
+
+
+  .floating-ai-header {
+    padding: 12px 14px;
+  }
+
+
+  .ai-header-info img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .ai-header-info h3 {
+    font-size: 15px;
+  }
+
+
+  .ai-header-info span {
+    font-size: 11px;
+  }
+
+
+  .floating-ai-body {
+    padding: 14px;
+  }
+
+
+  .floating-ai-input {
+    padding: 10px;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL SCREENS
+========================================= */
+
+@media (max-width: 380px) {
+
+  .floating-ai-button {
+    width: 56px;
+    height: 56px;
+
+    right: 14px;
+    bottom: 14px;
+  }
+
+
+  .floating-ai-chat {
+    right: 10px;
+    bottom: 80px;
+
+    width: calc(100vw - 20px);
+
+    height: 72vh;
+
+    border-radius: 18px;
+  }
+
+}

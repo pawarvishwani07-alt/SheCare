@@ -1,0 +1,289 @@
+.health-topics-page {
+  min-height: 100vh;
+  background: #fff8fb;
+  color: #30242b;
+}
+
+
+/* ================= HERO ================= */
+
+.topics-hero {
+  min-height: 430px;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #fff8fb,
+    #fceaf2
+  );
+}
+
+.topics-hero-content {
+  max-width: 650px;
+}
+
+.topics-label {
+  color: #c94f78;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.topics-hero h1 {
+  font-size: 55px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.topics-hero h1 span {
+  color: #c94f78;
+}
+
+.topics-hero-content > p:last-child {
+  color: #6d5961;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.topics-hero-icon {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f7d4e2;
+  font-size: 100px;
+
+  box-shadow:
+    0 20px 50px rgba(150, 70, 100, 0.15);
+}
+
+
+/* ================= TOPICS ================= */
+
+.all-topics {
+  padding: 85px 8%;
+  background: white;
+}
+
+.topics-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.topics-heading > p {
+  color: #c94f78;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.topics-heading h2 {
+  font-size: 38px;
+  margin: 8px 0;
+}
+
+.topics-heading span {
+  color: #75646b;
+}
+
+
+/* ================= GRID ================= */
+
+.health-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.health-topic-card {
+  padding: 35px 30px;
+
+  background: #fff8fb;
+  border: 1px solid #f3dce5;
+  border-radius: 20px;
+
+  transition: 0.3s;
+}
+
+.health-topic-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(130, 70, 100, 0.12);
+}
+
+.health-topic-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: #fceaf2;
+
+  font-size: 32px;
+
+  margin-bottom: 20px;
+}
+
+.health-topic-card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.health-topic-card p {
+  color: #6d5961;
+  font-size: 14px;
+  line-height: 1.7;
+
+  min-height: 72px;
+
+  margin-bottom: 20px;
+}
+
+.topic-learn-btn {
+  text-decoration: none;
+  color: #c94f78;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.topic-learn-btn:hover {
+  text-decoration: underline;
+}
+
+
+/* ================= AWARENESS ================= */
+
+.health-awareness-banner {
+  padding: 70px 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fceaf2;
+}
+
+.health-awareness-banner > div:first-child {
+  max-width: 700px;
+}
+
+.health-awareness-banner p:first-child {
+  color: #c94f78;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.health-awareness-banner h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin: 10px 0 18px;
+}
+
+.health-awareness-banner p:last-child {
+  color: #6d5961;
+  line-height: 1.7;
+}
+
+.banner-icon {
+  font-size: 90px;
+  padding-right: 50px;
+}
+
+
+/* ================= DISCLAIMER ================= */
+
+.topics-disclaimer {
+  padding: 40px 8%;
+  text-align: center;
+  background: white;
+}
+
+.topics-disclaimer h3 {
+  color: #c94f78;
+  margin-bottom: 10px;
+}
+
+.topics-disclaimer p {
+  max-width: 850px;
+  margin: auto;
+
+  color: #75646b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .topics-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .topics-hero-content {
+    max-width: 700px;
+  }
+
+  .health-topic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .health-awareness-banner {
+    text-align: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .banner-icon {
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .topics-hero {
+    padding: 60px 5%;
+  }
+
+  .topics-hero h1 {
+    font-size: 40px;
+  }
+
+  .topics-hero-icon {
+    width: 200px;
+    height: 200px;
+    font-size: 75px;
+  }
+
+  .all-topics {
+    padding: 60px 5%;
+  }
+
+  .health-topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topics-heading h2,
+  .health-awareness-banner h2 {
+    font-size: 30px;
+  }
+}

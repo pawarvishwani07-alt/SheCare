@@ -1,0 +1,28 @@
+.back-home-container {
+  width: 100%;
+  padding: 25px 9%;
+  background: #ffffff;
+}
+
+.back-home-btn {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  background: #d63384;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 25px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background: #b8256d;
+  transform: translateX(-3px);
+}

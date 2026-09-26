@@ -1,0 +1,252 @@
+.login-page {
+  min-height: 100vh;
+  background: #fff5f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 52px 20px;
+  box-sizing: border-box;
+}
+
+
+/* Main White Card */
+
+.login-card {
+  width: 450px;
+  max-width: 100%;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 45px 42px 35px;
+  box-sizing: border-box;
+
+  box-shadow:
+    0 10px 35px rgba(80, 40, 60, 0.10);
+}
+
+
+/* SheCare Logo */
+
+.login-logo {
+  width: 105px;
+  height: 105px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 22px;
+}
+
+
+/* Heading */
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #292929;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.login-card h1 span {
+  font-size: 25px;
+}
+
+
+/* Subtitle */
+
+.login-subtitle {
+  text-align: center;
+  margin: 8px 0 36px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Form */
+
+.login-form-group {
+  margin-bottom: 23px;
+}
+
+.login-form-group label {
+  display: block;
+  margin-bottom: 9px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Email Input */
+
+.login-form-group input {
+  width: 100%;
+  height: 47px;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  border: 1px solid #dddddd;
+  border-radius: 11px;
+
+  background: #ffffff;
+  color: #222222;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.login-form-group input::placeholder {
+  color: #a5a5a5;
+}
+
+.login-form-group input:focus {
+  border-color: #d94b83;
+  box-shadow: 0 0 0 2px rgba(217, 75, 131, 0.08);
+}
+
+
+/* Password Label */
+
+.login-password-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.login-password-label label {
+  margin-bottom: 0;
+}
+
+.login-password-label span {
+  color: #999999;
+  font-size: 11px;
+}
+
+
+/* Password */
+
+.login-password-wrapper {
+  position: relative;
+}
+
+.login-password-wrapper input {
+  padding-right: 65px;
+}
+
+.login-password-wrapper button {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  color: #d63384;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-password-wrapper button:hover {
+  color: #b82469;
+}
+
+
+/* Message */
+
+.login-message {
+  margin: -5px 0 16px;
+  text-align: center;
+
+  color: #d63384;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* Login Button */
+
+.login-submit {
+  width: 100%;
+  height: 47px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #d94b83;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.login-submit:hover {
+  background: #c83d75;
+  transform: translateY(-1px);
+}
+
+.login-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* Register Link */
+
+.login-register {
+  margin: 22px 0 0;
+  text-align: center;
+
+  color: #666666;
+  font-size: 13px;
+}
+
+.login-register a {
+  color: #d63384;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .login-page {
+    padding: 30px 15px;
+  }
+
+  .login-card {
+    padding: 35px 25px 30px;
+    border-radius: 18px;
+  }
+
+  .login-logo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 18px;
+  }
+
+  .login-card h1 {
+    font-size: 24px;
+  }
+
+  .login-subtitle {
+    margin-bottom: 28px;
+  }
+}
