@@ -1,3 +1,4 @@
+import API_URL from "../config";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./BMI.css";
@@ -79,8 +80,8 @@ function BMI() {
 
     // Save BMI to backend
     try {
-      const response = await fetch(
-        "http://localhost:5000/api/bmi",
+      const response = await fetch(`
+        ${API_URL}/api/bmi`, 
         {
           method: "POST",
 

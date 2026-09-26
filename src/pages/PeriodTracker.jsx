@@ -1,3 +1,4 @@
+import API_URL from "../config";
 import { useState } from "react";
 import "./PeriodTracker.css";
 import { Link } from "react-router-dom";
@@ -127,7 +128,7 @@ function PeriodTracker() {
     // Save data to backend
     try {
       const response = await fetch(
-        "http://localhost:5000/api/period",
+        `${API_URL}/api/period`,
         {
           method: "POST",
           headers: {

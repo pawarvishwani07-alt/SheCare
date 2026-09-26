@@ -1,3 +1,4 @@
+import API_URL from "../config";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Dashboard.css";
@@ -10,7 +11,7 @@ function Dashboard() {
     const loadUser = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/me",
+          `${API_URL}/api/me`, 
           {
             credentials: "include",
           }
@@ -30,7 +31,7 @@ function Dashboard() {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:5000/api/logout", {
+      await fetch(`${API_URL}/api/logout`, {
         method: "POST",
         credentials: "include",
       });

@@ -5,6 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import API_URL from "./config";
 
 // Pages
 import NutritionPlanner from "./pages/NutritionPlanner";
@@ -290,10 +291,10 @@ function ProtectedRoute({ children }) {
       try {
 
         const response = await fetch(
-          "http://localhost:5000/api/me",
-          {
-            credentials: "include",
-          }
+  `${API_URL}/api/me`,
+  {
+    credentials: "include",
+  }
         );
 
 
